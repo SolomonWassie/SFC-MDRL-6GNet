@@ -1,4 +1,4 @@
-SFC-MDRL-6GNet
+**SFC-MDRL-6GNet**
 
 SFC-MDRL-6GNet is a deep reinforcement learning–based framework for context-aware online Service Function Chain (SFC) deployment and stateful Virtual Network Function (VNF) migration across the Cloud Continuum in 6G network architectures.
 
@@ -6,55 +6,33 @@ The framework enables intelligent, network-state–adaptive VNF placement and mi
 
 Unlike traditional heuristic or greedy methods, SFC-MDRL-6GNet continuously monitors time-varying user traffic, infrastructure resource availability, and link conditions to dynamically optimize VNF deployment decisions.
 
-🎯 Optimization Objectives
+**Optimization Objectives**
+- **End-to-End (E2E) SFC delay**
 
-SFC-MDRL-6GNet jointly optimizes:
+- Stateful VNF migration cost
+- SLA violation reduction
+- VNF request acceptance ratio
+- Resource utilization efficiency
+- Processing and communication latency
+- Migration overhead (context transfer cost, bandwidth usage, energy consumption, SLA penalties)
+- Multi-objective optimization formulation modeling the latency–migration trade-off
 
-End-to-End (E2E) SFC delay
-
-Stateful VNF migration cost
-
-SLA violation reduction
-
-VNF request acceptance ratio
-
-Resource utilization efficiency
-
-The framework explicitly models the trade-off between:
-
-Processing and communication latency
-
-Migration overhead (context transfer cost, bandwidth usage, energy consumption, SLA penalties)
-
-using a multi-objective optimization formulation.
-
-🧠 Core System Model
+**Core System Model**
 
 SFC-MDRL-6GNet operates within a 6G architecture composed of:
 
-Cloud Continuum Framework (CCF)
-
 Integrates Extreme-edge, Far-edge, Near-edge, and Cloud nodes into a unified infrastructure.
-
-Management and Orchestration Framework (MOF)
-
 Hosts the Service Orchestrator responsible for VNF lifecycle management.
 
-AI/ML Framework (AIMLF)
+
 
 Supports training, deployment, and continuous refinement of DRL models.
 
-System Modeling
 
-Physical network modeled as an undirected graph
-G = (V, E)
-
-Service Function Chain modeled as a Directed Acyclic Graph (DAG)
-H = (K, L)
 
 Stateful VNFs requiring context-aware migration across distributed nodes
 
-🤖 Learning Architecture
+**Learning Architecture**
 
 SFC-MDRL-6GNet formulates VNF deployment as a Markov Decision Process (MDP) and employs:
 
@@ -82,7 +60,7 @@ Evaluates SLA constraints
 
 Predicts optimal reconfiguration and migration actions
 
-🔄 Context-Aware Stateful Migration
+**Context-Aware Stateful Migration**
 
 Each VNF is modeled as stateful, requiring migration of context information when relocated.
 
@@ -108,7 +86,7 @@ Reduced unnecessary migrations
 
 Adaptive scaling under fluctuating traffic demands
 
-🌐 Dynamic & Scalable Environment
+**Dynamic & Scalable Environment**
 
 SFC-MDRL-6GNet simulates:
 
@@ -122,7 +100,7 @@ Large-scale network topologies (10–60 nodes)
 
 SFC lengths up to 13 VNFs
 
-📊 Performance Gains
+📊 **Performance Gains**
 
 Compared to greedy baseline approaches, the framework achieves:
 
