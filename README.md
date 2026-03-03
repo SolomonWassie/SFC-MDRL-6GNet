@@ -7,7 +7,6 @@ The framework enables intelligent, network-state–adaptive VNF placement and mi
 Unlike traditional heuristic or greedy methods, SFC-MDRL-6GNet continuously monitors time-varying user traffic, infrastructure resource availability, and link conditions to dynamically optimize VNF deployment decisions.
 
 **Optimization Objectives**
--End-to-End (E2E) SFC delay
 
 - Stateful VNF migration cost
 - SLA violation reduction
