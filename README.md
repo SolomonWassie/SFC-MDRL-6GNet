@@ -1,12 +1,16 @@
 **SFC-MDRL-6GNet: Deep Reinforcement Learning for Context-Aware Online Service
 Function Chain Deployment and Migration over 6G Networks**
 
-**SFC-MDRL-6GNet** is a  Deep reinforcement learning  for context-aware online **S**ervice **F**unction **C**hain (SFC) **D**eployment and  **M**igration in **6Gnet**work architectures.
+**  6G-DRL-SFCPlacement** is a  Deep reinforcement learning  for context-aware online **S**ervice **F**unction **C**hain (SFC) **D**eployment and  **M**igration in **6Gnet**work architectures.
 The framework enables intelligent, network-state–adaptive VNF placement and migration across Extreme Edge, Edge, and Central Cloud environments within the Cloud Continuum Framework (CCF).
-Unlike traditional heuristic or greedy methods, SFC-MDRL-6GNet continuously monitors time-varying user traffic, infrastructure resource availability, and link conditions to dynamically optimize VNF deployment decisions.
+Unlike traditional heuristic or greedy methods, SFC-MDRL-6GNet continuously monitors time-varying user traffic, infrastructure resource availability, and link conditions to dynamically optimize VNF deployment decisions. The framework enables network-state–adaptive VNF placement across Extreme Edge, Edge, and Central Cloud environments within the Cloud Continuum Framework (CCF), without relying on static heuristics or greedy strategies. By continuously monitoring time-varying traffic demands, infrastructure resource availability, and link conditions, SFC-MDRL-6GNet dynamically optimizes deployment decisions while explicitly modeling the trade-off between processing and communication latency and migration overhead, including context transfer cost, bandwidth usage, energy consumption, and SLA penalties, through a multi-objective optimization formulation.
 
 **Optimization Objectives**
-
+- End-to-End (E2E) SFC delay
+- Stateful VNF migration cost
+- SLA violation reduction
+- VNF request acceptance ratio
+- Resource utilization efficiency 
 - Stateful VNF migration cost
 - SLA violation reduction
 - VNF request acceptance ratio
