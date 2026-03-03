@@ -14,8 +14,7 @@ Unlike traditional heuristic or greedy methods, SFC-MDRL-6GNet continuously moni
 - Processing and communication latency
 - Migration overhead (context transfer cost, bandwidth usage, energy consumption, SLA penalties)
 - Multi-objective optimization formulation modeling the latency–migration trade-off
-
-- **System Model and Learning Architecture**
+ **System Model and Learning Architecture**
   - Proximal Policy Optimization (PPO)
   - Policy Network → selects optimal physical nodes for VNF placement
   - Value Network → estimates long-term expected return
