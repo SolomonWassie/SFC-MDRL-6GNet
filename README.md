@@ -5,8 +5,6 @@
 
 The framework enables intelligent network-state–adaptive orchestration of Virtual Network Functions (VNFs) across the Cloud Continuum Framework (CCF), which integrates distributed compute resources.
 
-Unlike traditional heuristic or greedy placement approaches, the framework continuously observes **time-varying network conditions** and dynamically learns optimal deployment policies that minimize service delay while accounting for migration overhead.
-
 Learning is performed using **Proximal Policy Optimization (PPO)** with policy and value networks interacting with a network environment.
 
 ---
@@ -34,21 +32,14 @@ Implemented using:
 
 # System Overview
 
-The CCF provides a unified resource pool that orchestrates distributed computing and networking resources across the continuum from Extreme Edge to Central Cloud.
-
-Nodes within the CCF include:
-
-- Extreme-edge devices (e.g., smartphones, IoT devices, AR/VR devices)
-- Edge / MEC servers located near base stations
-- Central cloud data centers with large-scale computational capacity
-
+The CCF provides a unified resource pool that orchestrates distributed computing and networking resources across the continuum from Edge to Central Cloud.
 Each node provides heterogeneous computational and communication resources that must be efficiently allocated to support service requests.
 
 ---
 
 ## Service Function Chains (SFCs)
 
-Network services are modeled as **Service Function Chains**, consisting of ordered Virtual Network Functions such as:
+**Network service** are modeled as Service Function Chains, consisting of ordered Virtual Network Functions such as:
 
 - Network Address Translation (NAT)
 - Firewall (FW)
