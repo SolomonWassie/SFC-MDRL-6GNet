@@ -148,7 +148,7 @@ If you use this framework in your research, please cite:
 
 **Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks**
 ACM/SIGAPP Symposium on Applied Computing (SAC), 2025.
- URL: https://dl.acm.org/doi/abs/10.1145/3672608.3707975
+URL: https://dl.acm.org/doi/abs/10.1145/3672608.3707975
 
 ```
 @inproceedings{wassie2025deep,
