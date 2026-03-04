@@ -3,15 +3,11 @@
 
 6G-DRL-SFC-Placement is a research framework for **context-aware Service Function Chain (SFC) deployment and stateful VNF migration** using **Deep Reinforcement Learning (DRL)**.
 
-The framework enables intelligent network-state–adaptive orchestration of Virtual Network Functions (VNFs) across the Cloud Continuum Framework (CCF), which integrates distributed compute resources from:
-
-- Extreme Edge  
-- Edge / MEC nodes  
-- Central Cloud data centers  
+The framework enables intelligent network-state–adaptive orchestration of Virtual Network Functions (VNFs) across the Cloud Continuum Framework (CCF), which integrates distributed compute resources.
 
 Unlike traditional heuristic or greedy placement approaches, the framework continuously observes **time-varying network conditions** and dynamically learns optimal deployment policies that minimize service delay while accounting for migration overhead.
 
-Learning is performed using **Proximal Policy Optimization (PPO)** with policy and value networks interacting with a simulated network environment.
+Learning is performed using **Proximal Policy Optimization (PPO)** with policy and value networks interacting with a network environment.
 
 ---
 
@@ -117,10 +113,25 @@ The simulation environment models realistic network behavior including:
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-
-
+```
+6G-DRL-SFC-Placement/
+│
+├── envs/
+│   ├── network_environment.py
+│   ├── sfc_requests.py
+│   └── network_topology.py
+│
+├── agents/
+│   ├── ppo_agent.py
+│   ├── policy_network.py
+│   └── value_network.py
+│
+├── results/
+│
+├── main.py
+└── README.md
 ---
 
 # Running the Framework
@@ -140,6 +151,6 @@ python main.py
 
 If you use this framework in your research, please cite:
 
-Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks
-
+**Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks**
 ACM/SIGAPP Symposium on Applied Computing (SAC), 2025.
+URL: https://dl.acm.org/doi/abs/10.1145/3672608.3707975
