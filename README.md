@@ -1,5 +1,5 @@
 # 6G-DRL-SFC-Placement
-## Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks
+## Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration
 
 6G-DRL-SFC-Placement is a research framework for **context-aware Service Function Chain (SFC) deployment and stateful VNF migration** using **Deep Reinforcement Learning (DRL)**.
 
