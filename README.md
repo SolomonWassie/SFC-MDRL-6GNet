@@ -72,7 +72,7 @@ The objective is to determine optimal deployment locations for VNFs.
 
 ## DRL-Based Service Orchestrator
 
-A reinforcement learning agent operates as a **network-aware service orchestrator** that observes the current system state and decides **where VNFs should be deployed or migrated** across the Cloud Continuum Framework.
+A reinforcement learning agent operates as a **network-aware service orchestrator** that observes the current system state and decides **where VNFs should be deployed or migrated** across the Network.
 
 The DRL agent continuously adapts to changing network conditions to minimize service latency while accounting for migration costs.
 
@@ -118,3 +118,28 @@ The simulation environment models realistic network behavior including:
 ---
 
 # Repository Structure
+
+
+
+---
+
+# Running the Framework
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Run training:
+```bash
+python main.py
+```
+---
+
+# Publication
+
+If you use this framework in your research, please cite:
+
+Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks
+
+ACM/SIGAPP Symposium on Applied Computing (SAC), 2025.
