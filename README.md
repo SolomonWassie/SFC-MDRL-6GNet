@@ -1,9 +1,9 @@
 # 6G-DRL-SFC-Placement
 ## Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks
 
-**6G-DRL-SFC-Placement** is a research framework for **context-aware Service Function Chain (SFC) deployment and stateful VNF migration** in **6G network architectures** using **Deep Reinforcement Learning (DRL)**.
+6G-DRL-SFC-Placement is a research framework for **context-aware Service Function Chain (SFC) deployment and stateful VNF migration** using **Deep Reinforcement Learning (DRL)**.
 
-The framework enables intelligent **network-state–adaptive orchestration** of Virtual Network Functions (VNFs) across the **Cloud Continuum Framework (CCF)**, which integrates distributed compute resources from:
+The framework enables intelligent network-state–adaptive orchestration of Virtual Network Functions (VNFs) across the Cloud Continuum Framework (CCF), which integrates distributed compute resources from:
 
 - Extreme Edge  
 - Edge / MEC nodes  
@@ -23,11 +23,9 @@ Learning is performed using **Proximal Policy Optimization (PPO)** with policy a
   - End-to-End latency
   - Migration overhead
   - SLA constraints
-- **Stateful VNF migration modeling**
+- **VNF migration modeling**
 - Dynamic traffic generation
 - Heterogeneous compute and communication resources
-- Scalable network environments (10–60 nodes)
-- Service chains up to **13 VNFs**
 
 Implemented using:
 
@@ -40,11 +38,7 @@ Implemented using:
 
 # System Overview
 
-The framework models a **6G network architecture** consisting of three key components.
-
-## Cloud Continuum Framework (CCF)
-
-The **Cloud Continuum Framework (CCF)** provides a unified resource pool that orchestrates distributed computing and networking resources across the continuum from **Extreme Edge to Central Cloud**.
+The CCF provides a unified resource pool that orchestrates distributed computing and networking resources across the continuum from Extreme Edge to Central Cloud.
 
 Nodes within the CCF include:
 
@@ -72,7 +66,7 @@ Each SFC request specifies:
 - Maximum end-to-end delay  
 - Computational resource demand  
 
-The objective is to determine optimal deployment locations for VNFs across the **Cloud Continuum Framework (CCF)**.
+The objective is to determine optimal deployment locations for VNFs.
 
 ---
 
