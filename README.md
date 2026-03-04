@@ -107,21 +107,24 @@ The simulation environment models realistic network behavior including:
 ## Repository Structure
 
 ```
-6G-DRL-SFC-Placement/
+DRL_SFC_PLACEMNT/
+│
 │
 ├── envs/
-│   ├── network_environment.py
-│   ├── sfc_requests.py
+│   ├── enviroment.py
 │   └── network_topology.py
 │
-├── agents/
-│   ├── ppo_agent.py
-│   ├── policy_network.py
-│   └── value_network.py
+├── Greedy_Baseline.py
+├── migrationcost.py
+├── number_of_migration.py
+│
+├── scalability.py
+│
+├── main.py
 │
 ├── results/
 │
-├── main.py
+│
 └── README.md
 ```
 ---
