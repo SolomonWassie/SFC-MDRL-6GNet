@@ -104,30 +104,33 @@ The simulation environment models realistic network behavior including:
 
 ---
 
-## Repository Structure
 
+# Repository Structure
 ```
-6G-DRL-SFC-Placement/
-│
+DRL_SFC_PLACEMNT/
 │
 ├── envs/
 │   ├── enviroment.py
 │   └── network_topology.py
 │
+├── agents/
+│   ├── A2C_agent.py
+│   ├── callback.py
+│   └── PPO_agent.py
+│
 ├── Greedy_Baseline.py
 ├── migrationcost.py
 ├── number_of_migration.py
-│
 ├── scalability.py
 │
-├── main.py
+├── training_A2C.py
+├── training_ppo.py
+├── training_trpo
 │
 ├── results/
 │
-│
 └── README.md
 ```
----
 
 # Running the Framework
 
@@ -140,17 +143,14 @@ Run training:
 ```bash
 python main.py
 ```
----
-
-# Publication
-
+**Citation**
 If you use this framework in your research, please cite:
 
 **Deep Reinforcement Learning for Context-Aware Online Service Function Chain Deployment and Migration over 6G Networks**
 ACM/SIGAPP Symposium on Applied Computing (SAC), 2025.
 URL: https://dl.acm.org/doi/abs/10.1145/3672608.3707975
 
-```
+
 @inproceedings{wassie2025deep,
   title={Deep reinforcement learning for context-aware online service function chain deployment and migration over 6g networks},
   author={Wassie, Solomon Fikadie and Di Maio, Antonio and Braun, Torsten},
@@ -158,5 +158,3 @@ URL: https://dl.acm.org/doi/abs/10.1145/3672608.3707975
   pages={1361--1370},
   year={2025}
 }
-```
-
