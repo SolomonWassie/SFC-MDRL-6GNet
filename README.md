@@ -141,7 +141,7 @@ pip install -r requirements.txt
 
 Run training:
 ```bash
-python main.py
+python training_ppo.py  # PPO agent training
 ```
 **Citation**
 If you use this framework in your research, please cite:

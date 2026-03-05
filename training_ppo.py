@@ -8,8 +8,8 @@ from stable_baselines3.common.monitor import Monitor
 from gymnasium.envs.registration import register
 # Ensure env module is importable so Gym can locate the class
 from envs.enviroment import communication_overEnv  # noqa: F401
-from Agent.callback import RewardCallback
-from Agent.ppo_agent import build_ppo_agent
+from agents.callback import RewardCallback
+from agents.ppo_agent import build_ppo_agent
 
 
 # =========================

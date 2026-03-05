@@ -12,8 +12,8 @@ from gymnasium.envs.registration import register
 # Ensure env module is importable so Gym can locate the class by entry_point
 from envs.enviroment import communication_overEnv  # noqa: F401
 
-from Agent.callback import RewardCallback
-from Agent.trpo_agent import build_trpo_agent
+from agents.callback import RewardCallback
+from agents.trpo_agent import build_trpo_agent
 
 
 # =========================
