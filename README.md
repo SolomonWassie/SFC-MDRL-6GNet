@@ -115,8 +115,9 @@ DRL_SFC_PLACEMNT/
 │
 ├── agents/
 │   ├── A2C_agent.py
-│   ├── callback.py
-│   └── PPO_agent.py
+│   ├── PPO_agent.py
+│   ├── trpo_agent.py
+│   └── callback.py
 │
 ├── metrics/
 │   ├── migrationcost.py
@@ -128,11 +129,13 @@ DRL_SFC_PLACEMNT/
 │   ├── training_ppo.py
 │   └── training_trpo.py
 │
+├── results/
+│   ├── PPO_vnf_migration_training_rewards_lr_0.0001.csv
+│   ├── PPO_vnf_migration_training_rewards_lr_0.0005.csv
+│   └── PPO_vnf_migration_training_rewards_lr_0.003.csv
+│
 ├── Baseline.py
 ├── requirements.txt
-│
-├── results/
-│
 └── README.md
 ```
 
